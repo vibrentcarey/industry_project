@@ -2,10 +2,12 @@ import React from "react";
 import LoyaltyCard from "../components/LoyaltyCard";
 import PageWrapper from "../components/PageWrapper";
 import PromoBadge from "../components/PromoBadge";
+import TopBar from "../components/TopBar";
 
 export default function programoptions() {
 	return (
 		<PageWrapper>
+			<TopBar className="-mt-14"/>
 			<div className="flex flex-wrap gap-4 justify-between">
 				<LoyaltyCard
 					title="Point Card System"
