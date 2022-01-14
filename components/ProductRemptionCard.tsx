@@ -12,7 +12,7 @@ export default function ProductRemptionCard({ name, image, points }: Props) {
 	const [count, setCount] = useState(points);
 
 	return (
-		<div className="w-full rounded-lg shadow-lg  p-4 flex justify-between">
+		<div className="w-full rounded-lg shadow-lg  p-4 flex justify-between bg-white">
 			<div className="flex gap-2">
 				<img src={image} className="w-20 rounded-lg" />
 				<div>
