@@ -3,8 +3,8 @@ import React from "react";
 
 const Header = () => {
 	return (
-		<header className="h-40 w-screen bg-white px-8">
-			<nav className="h-full flex justify-between items-center">
+		<header className="h-24 w-screen bg-white px-8">
+			<nav className="h-full flex justify-between items-center mt-4 ">
 				<img src="./hamburger.svg" />
 				<Link href="/">
 					<img className="cursor-pointer" src="./logo.svg" />

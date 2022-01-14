@@ -2,7 +2,7 @@ import React from "react";
 import PromoBadge from "./PromoBadge";
 export default function PremiumCard() {
 	return (
-		<section className="bg-primaryYellow p-10 flex rounded-lg flex-col justify-between items-center">
+		<section className="bg-primaryYellow p-10 flex rounded-lg flex-col justify-between items-center max-w-screen-sm mt-8 mb-2 shadow-xl">
 			{" "}
 			<div>
 				<imr src="./" />
