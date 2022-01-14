@@ -15,7 +15,7 @@ export default function Stats() {
 				<img className="h-10" src="./ep_data-analysis.svg" />
 				<p className="text-white text-xs">Weekly Business</p>
 			</div> */}
-			<img  className="h-28" src="./charts.png" />
+			<img className="h-28" src="./charts.png" />
 		</div>
 	);
 }

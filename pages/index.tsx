@@ -29,9 +29,13 @@ export default function Home() {
 			</div>
 			<Stats />
 			<div className="w-full relative">
-				<img className="" src="./Chart 02.svg" />
+				<p className="absolute top-12 left-12 font-bold z-10">Point Card</p>
+				<p className="absolute top-12 right-14  z-10">#C83940</p>
+				<img className="opacity-20" src="./Chart 3.svg" />
 			</div>
-			<CTAButton yellow>Upgrade</CTAButton>
+			<CTAButton className="-mt-8" yellow>
+				Upgrade
+			</CTAButton>
 			<div className="flex justify-between flex-wrap gap-4">
 				<LoyaltyCard
 					title="Point Card System"
