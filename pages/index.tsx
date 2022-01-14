@@ -2,6 +2,9 @@
 import Head from "next/head";
 import PageWrapper from "../components/PageWrapper";
 import HighlightCard from "../components/HighlightCard";
+import Stats from "../components/Stats";
+import CTAButton from "../components/CTAButton";
+import LoyaltyCard from "../components/LoyaltyCard";
 export default function Home() {
 	return (
 		<PageWrapper>
@@ -20,6 +23,26 @@ export default function Home() {
 					icon="./bell.svg"
 					message="Active Loyalty Programs"
 					count="5"
+				/>
+			</div>
+			<Stats />
+			<CTAButton>Upgrade</CTAButton>
+			<div className="flex justify-between flex-wrap gap-4">
+				<LoyaltyCard
+					title="Point Card System"
+					message="Create a points base rewards system for your business"
+				/>
+				<LoyaltyCard
+					title="Point Card System"
+					message="Create a points base rewards system for your business"
+				/>
+				<LoyaltyCard
+					title="Point Card System"
+					message="Create a points base rewards system for your business"
+				/>
+				<LoyaltyCard
+					title="Point Card System"
+					message="Create a points base rewards system for your business"
 				/>
 			</div>
 		</PageWrapper>
