@@ -4,13 +4,13 @@ export default function PremiumCard() {
 	return (
 		<section className="bg-primaryYellow p-10 flex rounded-lg flex-col justify-between items-center max-w-screen-sm mt-8 mb-2 shadow-xl">
 			{" "}
-			<div>
-				<imr src="./" />
-				<h1>PREMIUM</h1>
+			<div className="flex gap-2">
+				<img src="./crown.svg" />
+				<h1 className="text-xl font-extrabold">PREMIUM</h1>
 			</div>
-			<p>
-				orem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor odio,
-				eleifend in sagittis eu, pretium{" "}
+			<p className="font-bold text-center">
+				Upgrade today and have access to our wide array of premium resources
+				Underdog offers. Take your small business to the next level!
 			</p>
 			<div className="flex flex-wrap gap-2 justify-around">
 				<PromoBadge icon="./bi_currency-dollar.svg" title="Monitor Revenue" />

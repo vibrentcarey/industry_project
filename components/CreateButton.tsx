@@ -1,6 +1,14 @@
 import React from "react";
+import { ButtonType } from "./CTAButton";
 
-export default function CreateButton({ premium, ...props }) {
+interface Props {
+	premium?: boolean;
+}
+
+export default function CreateButton({
+	premium,
+	...props
+}: Props & ButtonType) {
 	return premium ? (
 		<button
 			{...props}
