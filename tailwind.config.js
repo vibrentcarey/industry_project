@@ -10,6 +10,8 @@ module.exports = {
 				primaryBlack: "#181818",
 				primaryBlue: '#1778F2',
 				backgroundGray: "#F5F5F5",
+				cardTorquise: '#74f3de',
+				cardBlue: '#1778F2'
 			},
 		},
 	},
