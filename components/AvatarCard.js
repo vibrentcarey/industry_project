@@ -31,7 +31,7 @@ const AvatarCard = ({ fname, lname, title, }) => {
   }
   return (
     <div className='w-full bg-backgroundGray p-6 rounded-md mt-10 mb-10 flex flex-col items-center shadow-lg'>
-      <span className='self-end text-xs mx-1 text-primaryBlue' onClick={handleEdit}>{editMode ? 'save' : 'edit'}</span>
+      <span className='self-end text-xs mx-1 text-primaryBlue hover:cursor-pointer' onClick={handleEdit}>{editMode ? 'save' : 'edit'}</span>
       {/* Profile Info */}
       <article className='w-1/2 flex flex-col items-center'>
         <img className='' src='./profile-image.png' />
