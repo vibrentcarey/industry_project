@@ -9,7 +9,7 @@ const Header = () => {
 				<Link href="/">
 					<img className="cursor-pointer" src="./logo.svg" />
 				</Link>
-				<Link href="/scan">
+				<Link href="/profile">
 					<img className="h-12 cursor-pointer" src="./profile-image.png" />
 				</Link>
 			</nav>
