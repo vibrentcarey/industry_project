@@ -28,7 +28,7 @@ export default function Home() {
 				/>
 			</div>
 			<Stats />
-			<CTAButton>Upgrade</CTAButton>
+			<CTAButton yellow>Upgrade</CTAButton>
 			<div className="flex justify-between flex-wrap gap-4">
 				<LoyaltyCard
 					title="Point Card System"
