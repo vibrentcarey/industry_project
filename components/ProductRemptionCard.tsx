@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 interface Props {
@@ -7,7 +7,10 @@ interface Props {
 	points: number;
 }
 
-export default function ProductRemptionCard({ name, image, points = 10 }) {
+export default function ProductRemptionCard({ name, image, points }) {
+	//This is an anti-pattern, For demo purposes only
+	const [count, setCount] = useState(points);
+
 	return (
 		<div className="w-full rounded-lg shadow-lg  p-4 flex justify-between">
 			<div className="flex gap-2">
@@ -22,14 +25,20 @@ export default function ProductRemptionCard({ name, image, points = 10 }) {
 					Add
 				</button>
 				<div className="border-2 flex">
-					<button className="bg-primaryBlack text-white rounded-full relative right-2 p-1">
-						<FaPlus />
+					<button
+						onClick={() => setCount((c) => c - 10)}
+						className="bg-primaryBlack text-white rounded-full relative right-2 p-1"
+					>
+						<FaMinus />
 					</button>
 					<div>
-						<p className="text-black">{points}</p>
+						<p className="text-gray-600">{count} pts</p>
 					</div>
-					<button className="bg-primaryBlack text-white rounded-full relative left-2 p-1">
-						<FaMinus />
+					<button
+						onClick={() => setCount((c) => c + 10)}
+						className="bg-primaryBlack text-white rounded-full relative left-2 p-1"
+					>
+						<FaPlus />
 					</button>
 				</div>
 			</div>
