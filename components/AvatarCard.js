@@ -12,6 +12,9 @@ const AvatarCard = ({ fname, lname, title, }) => {
     email: 'eggsandflour@gmail.com',
     phone: '604 975 8463',
     address: '2173 W 41 Avenue, Vancouver, BC',
+    website: 'www.bceggsandflour.ca',
+    facebook: 'Eggs & Flour',
+    instagram: '@eggs&flour'
   })
 
   const handleEdit = () => {
@@ -28,7 +31,7 @@ const AvatarCard = ({ fname, lname, title, }) => {
   }
   return (
     <div className='w-full bg-backgroundGray p-6 rounded-md mt-10 mb-10 flex flex-col items-center shadow-lg'>
-      <span className='self-end text-xs mx-1 text-primaryBlue' onClick={handleEdit}>{editMode ?'save' : 'edit'}</span>
+      <span className='self-end text-xs mx-1 text-primaryBlue' onClick={handleEdit}>{editMode ? 'save' : 'edit'}</span>
       {/* Profile Info */}
       <article className='w-1/2 flex flex-col items-center'>
         <img className='' src='./profile-image.png' />
@@ -50,23 +53,32 @@ const AvatarCard = ({ fname, lname, title, }) => {
       {/* Form */}
       {editMode && <form className='flex flex-col w-full mt-4'>
         {/* Name */}
-        <label className='text-sm font-light' readOnly>Your Name</label>
-        <input className='mt-1 border-b-2 border-black bg-backgroundGray' value={form.fullName} />
+        <label className='text-sm font-light'>Your Name</label>
+        <input className='mt-1 border-b-2 border-black bg-backgroundGray' readOnly value={form.fullName} />
         {/* Company */}
-        <label className='text-sm font-light mt-4 ' readOnly>Company Name</label>
-        <input className='mt-1 border-b-2 border-black bg-backgroundGray' value={form.companyName} />
+        <label className='text-sm font-light mt-4 ' >Company Name</label>
+        <input className='mt-1 border-b-2 border-black bg-backgroundGray' readOnly value={form.companyName} />
         {/* Description */}
         <label className='text-sm font-light mt-4'>About</label>
         <textarea className='mt-1 border-2 rounded-md h-28 p-2 text-sm border-black bg-backgroundGray' placeholder={form.about} onChange={handleAbout} />
         {/* Email */}
-        <label className='text-sm font-light mt-4' readOnly>Email</label>
-        <input className='mt-1 border-b-2 border-black bg-backgroundGray' value={form.email} />
+        <label className='text-sm font-light mt-4' >Email</label>
+        <input className='mt-1 border-b-2 border-black bg-backgroundGray' readOnly value={form.email} />
         {/* Phone */}
-        <label className='text-sm font-light mt-4' readOnly>Phone</label>
-        <input className='mt-1 border-b-2 border-black bg-backgroundGray' value={form.phone} />
+        <label className='text-sm font-light mt-4' >Phone</label>
+        <input className='mt-1 border-b-2 border-black bg-backgroundGray' readOnly value={form.phone} />
         {/* Address */}
-        <label className='text-sm font-light mt-4' readOnly>Address</label>
-        <input className='mt-1 mb-6 border-b-2 border-black bg-backgroundGray' value={form.address} />
+        <label className='text-sm font-light mt-4' >Address</label>
+        <input className='mt-1 mb-6 border-b-2 border-black bg-backgroundGray' readOnly value={form.address} />
+        {/* Website */}
+        <label className='text-sm font-light mt-4'>Website</label>
+        <input className='mt-1 mb-6 border-b-2 border-black bg-backgroundGray' readOnly value={form.website} />
+        {/* Address */}
+        <label className='text-sm font-light mt-4'>Facebook</label>
+        <input className='mt-1 mb-6 border-b-2 border-black bg-backgroundGray' readOnly value={form.facebook} />
+        {/* Address */}
+        <label className='text-sm font-light mt-4'>Instagram</label>
+        <input className='mt-1 mb-6 border-b-2 border-black bg-backgroundGray' readOnly value={form.instagram} />
       </form>}
     </div>
   );
