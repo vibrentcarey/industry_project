@@ -4,10 +4,11 @@ import CreateButton from "./CreateButton";
 interface Props {
 	title: string;
 	message: string;
-	premium: boolean;
+	premium?: boolean;
+	icon?: string
 }
 
-export default function LoyaltyCard({ title, message, premium }: Props) {
+export default function LoyaltyCard({ title, message, premium, icon }: Props) {
 	return premium ? (
 		<div className="h-40 flex flex-col justify-between w-[48%] gap-4 shadow-xl rounded-lg p-4 bg-[#FFFDF4]">
 			<h1 className="text-2xl font-extrabold">{title}</h1>

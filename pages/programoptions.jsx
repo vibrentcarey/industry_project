@@ -1,6 +1,7 @@
 import React from "react";
 import LoyaltyCard from "../components/LoyaltyCard";
 import PageWrapper from "../components/PageWrapper";
+import PromoBadge from "../components/PromoBadge";
 import TopBar from "../components/TopBar";
 
 export default function programoptions() {
