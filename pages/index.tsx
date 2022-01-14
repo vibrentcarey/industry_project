@@ -28,6 +28,9 @@ export default function Home() {
 				/>
 			</div>
 			<Stats />
+			<div className="w-full relative">
+				<img className="" src="./Chart 02.svg" />
+			</div>
 			<CTAButton yellow>Upgrade</CTAButton>
 			<div className="flex justify-between flex-wrap gap-4">
 				<LoyaltyCard
@@ -48,9 +51,9 @@ export default function Home() {
 				/>
 			</div>
 			<PremiumCard />
-			<CTAButton add primary >Upgrade</CTAButton>
-       
-		
+			<CTAButton add primary>
+				Upgrade
+			</CTAButton>
 		</PageWrapper>
 	);
 }
