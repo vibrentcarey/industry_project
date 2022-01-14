@@ -1,5 +1,6 @@
 import React from "react";
 import { ButtonType } from "./CTAButton";
+import {FaPlus} from 'react-icons/fa'
 
 interface Props {
 	premium?: boolean;
@@ -20,9 +21,9 @@ export default function CreateButton({
 	) : (
 		<button
 			{...props}
-			className="bg-primaryBlack text-white rounded-full w-20 px-2 py-1 text-sm shadow-md"
+			className="bg-primaryBlack text-white rounded-full w-24 gap-1 px-4 py-1 text-sm shadow-md flex items-center"
 		>
-			<span className="font-bold">Create</span>
+			<FaPlus/><span className="font-bold">Create</span>
 		</button>
 	);
 }

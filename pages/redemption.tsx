@@ -21,9 +21,11 @@ export default function Redemption({}: Props) {
 					points={20}
 				/>
 				<ProductRemptionCard name="Cake" image="./Cake.png" points={30} />
+				<a href='/pointscard'>
 				<CTAButton primary add>
-					Add Item
+					Generate Card
 				</CTAButton>
+				</a>
 			</div>
 		</PageWrapper>
 	);

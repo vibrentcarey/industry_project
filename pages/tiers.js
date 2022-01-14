@@ -9,11 +9,13 @@ const Tiers = () => {
   return (
     <PageWrapper>
       <div className='flex flex-col items-center'>
-      <TopBar />
-      <FreeCard/>
+        <TopBar />
+        <FreeCard />
         <CTAButton add>Create Your Program Now</CTAButton>
         <PremiumCard />
-        <CTAButton primary>Upgrade</CTAButton>
+        <CTAButton primary>
+          <img className='mx-2' src='./crown2.svg' alt='crown' />
+          Upgrade</CTAButton>
       </div>
     </PageWrapper>
   );

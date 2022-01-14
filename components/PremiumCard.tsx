@@ -6,9 +6,9 @@ export default function PremiumCard() {
 			{" "}
 			<div className="flex gap-2">
 				<img src="./crown.svg" />
-				<h1 className="text-xl font-extrabold">PREMIUM</h1>
+				<h1 className="text-2xl font-extrabold">PREMIUM</h1>
 			</div>
-			<p className="font-bold text-center">
+			<p className="font-bold text-center my-4">
 				Upgrade today and have access to our wide array of premium resources
 				Underdog offers. Take your small business to the next level!
 			</p>

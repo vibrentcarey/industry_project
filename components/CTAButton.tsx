@@ -23,7 +23,7 @@ export default function CTAButton({
 				primary && "bg-primaryBlack text-white border-2 border-black"
 			} ${yellow && "bg-primaryYellow"} ${
 				add && "border-2 border-black"
-			} py-2 rounded-lg shadow-xl font-bold text-lg w-full mt-4 max-w-screen-sm ${
+			} py-2 rounded-lg shadow-xl font-bold text-lg w-full mt-4  flex justify-center items-center ${
 				props.className
 			}`}
 		>
