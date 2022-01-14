@@ -21,8 +21,9 @@ export default function ProductRemptionCard({ name, image, points }) {
 				</div>
 			</div>
 			<div className="flex flex-col justify-between">
-				<button className="bg-primaryBlack text-white px-4 rounded-full">
-					Add
+				<button className="bg-primaryBlack text-white px-4 rounded-full flex items-center gap-2 p-1">
+                    <FaPlus className="text-sm"/>
+					<span>Add</span>
 				</button>
 				<div className="border-2 flex">
 					<button
