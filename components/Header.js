@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
 	return (
-		<header className="h-40 w-screen bg-white  px-10">
+		<header className="h-40 w-screen bg-white px-8">
 			<nav className="h-full flex justify-between items-center">
 				<img src="./hamburger.svg" />
 				<Link href="/">
