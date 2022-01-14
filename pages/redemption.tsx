@@ -1,4 +1,5 @@
 import React from "react";
+import CTAButton from "../components/CTAButton";
 import PageWrapper from "../components/PageWrapper";
 import ProductRemptionCard from "../components/ProductRemptionCard";
 import TopBar from "../components/TopBar";
@@ -16,6 +17,7 @@ export default function Redemption({}: Props) {
 				<ProductRemptionCard name="Cupcake" image="./Cupcake.png" points={10} />
 				<ProductRemptionCard name="High Fibre Bread" image="./Cookie.png" points={20} />
 				<ProductRemptionCard name="Cake" image="./Cake.png" points={30} />
+                <CTAButton primary add >Add Item</CTAButton>
 			</div>
 		</PageWrapper>
 	);
