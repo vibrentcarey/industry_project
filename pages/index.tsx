@@ -47,9 +47,10 @@ export default function Home() {
 					message="Create a points base rewards system for your business"
 				/>
 			</div>
-			<PremiumCard>
+			<PremiumCard />
+			<CTAButton add primary >Upgrade</CTAButton>
        
-			</PremiumCard>
+		
 		</PageWrapper>
 	);
 }
