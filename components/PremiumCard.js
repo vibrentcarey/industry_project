@@ -5,7 +5,7 @@ export default function PremiumCard() {
 		<section className="bg-primaryYellow p-10 flex rounded-lg flex-col justify-between items-center">
 			{" "}
 			<div>
-                <imr src="./" />
+				<imr src="./" />
 				<h1>PREMIUM</h1>
 			</div>
 			<p>
